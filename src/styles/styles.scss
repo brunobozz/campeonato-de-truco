@@ -1,0 +1,32 @@
+@import "./custom-bootstrap-theme";
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.dupla-cor {
+  height: 24px;
+  width: 24px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+}

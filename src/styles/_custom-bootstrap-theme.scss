@@ -1,0 +1,23 @@
+$primary: #1852ce;
+$secondary: #999999;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": rgb(55, 156, 85),
+  "danger": rgb(190, 35, 35),
+  "warning": orange,
+  "info": rgb(45, 148, 216),
+);
+
+$custom-colors: (
+  "azul": rgb(33, 96, 189),
+  "laranja": orange,
+  "vermelho": rgb(192, 45, 45),
+  "amarelo": rgb(209, 209, 37),
+  "verde": rgb(51, 165, 51),
+  "preto": rgb(27, 27, 27),
+  "roxo": purple,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

@@ -1,0 +1,49 @@
+<div class="container p-3">
+  <h2>Nova Dupla</h2>
+  <form [formGroup]="duplaForm" (ngSubmit)="submitDupla()" class="row mt-3">
+    <div class="col-md-2">
+      <label for="cor" class="form-label">*Cor</label>
+      <select class="form-select" formControlName="cor">
+        <option value="null" selected>--</option>
+        <option value="bg-vermelho">Vermelho</option>
+        <option value="bg-azul">Azul</option>
+        <option value="bg-laranja">Laranja</option>
+        <option value="bg-verde">Verde</option>
+        <option value="bg-amarelo">Amarelo</option>
+        <option value="bg-roxo">Roxo</option>
+        <option value="bg-preto">Preto</option>
+      </select>
+    </div>
+    <div class="col-md-5 mb-3">
+      <label for="participante1" class="form-label">*Participante 1</label>
+      <select class="form-select" formControlName="participante1">
+        <option value="null" selected>--</option>
+        <option
+          *ngFor="let participante of PARTICIPANTES"
+          [value]="participante.id"
+        >
+          {{ participante.nome }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-5">
+      <label for="participante2" class="form-label">*Participante 2</label>
+      <select class="form-select" formControlName="participante2">
+        <option value="null" selected>--</option>
+        <option
+          *ngFor="let participante of PARTICIPANTES"
+          [value]="participante.id"
+        >
+          {{ participante.nome }}
+        </option>
+      </select>
+    </div>
+
+    <div class="text-end">
+      <button type="submit" class="btn btn-primary text-white">
+        <i class="fa fa-floppy-o"></i>
+        <span> Salvar</span>
+      </button>
+    </div>
+  </form>
+</div>

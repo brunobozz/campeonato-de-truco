@@ -1,0 +1,15 @@
+.navbar{
+    height: 58px;
+}
+
+@media (min-width: 600px) {
+  .btn-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logout-text{
+    display: none;
+  }
+}

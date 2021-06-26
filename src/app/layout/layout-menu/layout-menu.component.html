@@ -1,0 +1,25 @@
+<section
+  class="layout-menu bg-light pt-3"
+  [ngClass]="isOpen ? 'is-open' : 'is-close'"
+>
+  <section class="pages d-grid gap-2 container"> 
+    <button
+      class="btn text-white text-start"
+      [ngClass]="menuSelecionado === '/participantes' ? 'btn-primary' : 'btn-secondary'"
+      routerLink="/participantes"
+      (click)="clickMenu('/participantes')"
+    >
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <span>Participantes</span>
+    </button>
+    <button
+      class="btn text-white text-start"
+      [ngClass]="menuSelecionado === '/duplas' ? 'btn-primary' : 'btn-secondary'"
+      routerLink="/duplas"
+      (click)="clickMenu('/duplas')"
+    >
+      <i class="fa fa-users" aria-hidden="true"></i>
+      <span>Duplas</span>
+    </button>
+  </section>
+</section>
