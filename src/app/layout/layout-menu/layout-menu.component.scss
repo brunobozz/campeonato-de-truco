@@ -1,0 +1,42 @@
+.layout-menu {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 300px;
+  height: calc(100% - 54px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s all ease-in-out;
+  overflow: hidden;
+  z-index: 10;
+
+  .pages {
+    .btn {
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .user {
+    padding: 20px;
+
+    .btn {
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .layout-menu {
+    width: 240px;
+    left: -240px;
+  }
+
+  .is-open {
+    left: 0;
+  }
+}

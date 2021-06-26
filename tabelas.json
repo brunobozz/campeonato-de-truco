@@ -1,0 +1,118 @@
+{
+  "participantes": [
+    {
+      "nome": "Carlinhos",
+      "id": 3
+    },
+    {
+      "nome": "Chipa",
+      "id": 6
+    },
+    {
+      "nome": "Nefi",
+      "id": 7
+    },
+    {
+      "nome": "Thiago",
+      "id": 8
+    },
+    {
+      "nome": "Thales",
+      "id": 10
+    },
+    {
+      "nome": "Guilherme",
+      "id": 11
+    },
+    {
+      "nome": "Lico",
+      "id": 12
+    },
+    {
+      "nome": "Theo",
+      "id": 13
+    },
+    {
+      "nome": "Bruno",
+      "id": 14
+    },
+    {
+      "nome": "Vinícius",
+      "id": 15
+    },
+    {
+      "nome": "Larry",
+      "id": 16
+    },
+    {
+      "nome": "Ciro",
+      "id": 17
+    },
+    {
+      "nome": "Márcio",
+      "id": 18
+    },
+    {
+      "nome": "Diego",
+      "id": 19
+    }
+  ],
+  "duplas": [
+    {
+      "cor": "bg-vermelho",
+      "participantes": [
+        "3",
+        "6"
+      ],
+      "id": 1
+    },
+    {
+      "cor": "bg-azul",
+      "participantes": [
+        "7",
+        "8"
+      ],
+      "id": 2
+    },
+    {
+      "cor": "bg-laranja",
+      "participantes": [
+        "10",
+        "11"
+      ],
+      "id": 3
+    },
+    {
+      "cor": "bg-verde",
+      "participantes": [
+        "12",
+        "13"
+      ],
+      "id": 4
+    },
+    {
+      "cor": "bg-amarelo",
+      "participantes": [
+        "14",
+        "15"
+      ],
+      "id": 5
+    },
+    {
+      "cor": "bg-roxo",
+      "participantes": [
+        "16",
+        "17"
+      ],
+      "id": 6
+    },
+    {
+      "cor": "bg-preto",
+      "participantes": [
+        "18",
+        "19"
+      ],
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div class="container p-3">
+  <h2>
+    <i class="fa fa-user"></i>
+    <span> Novo Participante</span>
+  </h2>
+  <form
+    [formGroup]="participanteForm"
+    (ngSubmit)="submitParticipante()"
+    class="row mt-3"
+  >
+    <div class="mb-3">
+      <label for="nome" class="form-label">*Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': validaCampo('nome') }"
+        formControlName="nome"
+      />
+    </div>
+    <div class="text-end">
+      <button type="submit" class="btn btn-primary text-white">
+        <i class="fa fa-floppy-o"></i>
+        <span> Salvar</span>
+      </button>
+    </div>
+  </form>
+</div>
