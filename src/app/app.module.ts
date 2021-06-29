@@ -20,6 +20,7 @@ import { PageParticipantesComponent } from './pages/page-participantes/page-part
 import { PageDuplasComponent } from './pages/page-duplas/page-duplas.component';
 import { PageParticipanteNovoComponent } from './pages/page-participante-novo/page-participante-novo.component';
 import { PageDuplaNovaComponent } from './pages/page-dupla-nova/page-dupla-nova.component';
+import { PagePartidasComponent } from './pages/page-partidas/page-partidas.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PageDuplaNovaComponent } from './pages/page-dupla-nova/page-dupla-nova.
     PageParticipanteNovoComponent,
     PageDuplasComponent,
     PageDuplaNovaComponent,
+    PagePartidasComponent,
   ],
   imports: [
     BrowserModule,

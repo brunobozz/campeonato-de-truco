@@ -1,6 +1,9 @@
 <div class="container p-3">
   <div class="d-flex justify-content-between align-items-center">
-    <h2>Duplas</h2>
+    <h2>
+      <i class="fa fa-users"></i>
+      <span> Duplas</span>
+    </h2>
     <button class="btn btn-primary btn-sm" routerLink="/duplas/dupla-nova">
       <i class="fa fa-plus"></i>
       <span> Nova Dupla</span>
@@ -8,18 +11,22 @@
   </div>
   <ul class="list-group mt-3">
     <li
-      *ngFor="let dupla of DUPLAS_IDS; let i = index"
+      *ngFor="let dupla of DUPLAS; let i = index"
       class="list-group-item d-flex justify-content-between align-items-center"
     >
       <div class="d-flex justify-content-between align-items-center">
         <div class="dupla-cor me-3" [ngClass]="dupla.cor"></div>
-        <span *ngFor="let participante of DUPLAS[i].nomes" class="btn">{{
-          participante.nome
-        }}</span>
+        <span class="btn">{{ DUPLAS[i].participantes[0].nome }}</span>
+        <span>&</span>
+        <span class="btn">{{ DUPLAS[i].participantes[1].nome }}</span>
       </div>
       <button class="btn btn-danger btn-sm" (click)="deleteDupla(dupla.id)">
         <i class="fa fa-trash"></i>
       </button>
     </li>
   </ul>
+
+  <div class="text-end mt-3">
+    <button class="btn btn-primary" (click)="gerarPartidas()">Gerar Partidas</button>
+  </div>
 </div>

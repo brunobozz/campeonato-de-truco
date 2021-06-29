@@ -4,6 +4,7 @@ import { PageDuplaNovaComponent } from './pages/page-dupla-nova/page-dupla-nova.
 import { PageDuplasComponent } from './pages/page-duplas/page-duplas.component';
 import { PageParticipanteNovoComponent } from './pages/page-participante-novo/page-participante-novo.component';
 import { PageParticipantesComponent } from './pages/page-participantes/page-participantes.component';
+import { PagePartidasComponent } from './pages/page-partidas/page-partidas.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,15 @@ const routes: Routes = [
       {
         path: 'dupla-nova',
         component: PageDuplaNovaComponent,
+      },
+    ],
+  },
+  {
+    path: 'partidas',
+    children: [
+      {
+        path: '',
+        component: PagePartidasComponent,
       },
     ],
   },
