@@ -5,6 +5,7 @@ import { PageDuplasComponent } from './pages/page-duplas/page-duplas.component';
 import { PageParticipanteNovoComponent } from './pages/page-participante-novo/page-participante-novo.component';
 import { PageParticipantesComponent } from './pages/page-participantes/page-participantes.component';
 import { PagePartidasComponent } from './pages/page-partidas/page-partidas.component';
+import { PageTabelasComponent } from './pages/page-tabelas/page-tabelas.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,15 @@ const routes: Routes = [
       {
         path: '',
         component: PagePartidasComponent,
+      },
+    ],
+  },
+  {
+    path: 'tabelas',
+    children: [
+      {
+        path: '',
+        component: PageTabelasComponent,
       },
     ],
   },

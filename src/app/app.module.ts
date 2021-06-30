@@ -21,6 +21,8 @@ import { PageDuplasComponent } from './pages/page-duplas/page-duplas.component';
 import { PageParticipanteNovoComponent } from './pages/page-participante-novo/page-participante-novo.component';
 import { PageDuplaNovaComponent } from './pages/page-dupla-nova/page-dupla-nova.component';
 import { PagePartidasComponent } from './pages/page-partidas/page-partidas.component';
+import { PageTabelasComponent } from './pages/page-tabelas/page-tabelas.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { PagePartidasComponent } from './pages/page-partidas/page-partidas.compo
     PageDuplasComponent,
     PageDuplaNovaComponent,
     PagePartidasComponent,
+    PageTabelasComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { PagePartidasComponent } from './pages/page-partidas/page-partidas.compo
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    OrderModule,
     ToastrModule.forRoot({
       timeOut: 3000,
       positionClass: 'toast-bottom-right',

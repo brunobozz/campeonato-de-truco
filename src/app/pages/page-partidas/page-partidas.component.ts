@@ -50,7 +50,6 @@ export class PagePartidasComponent implements OnInit {
   getTurnosPontos() {
     this.apiLocal.getInfo('turnos').subscribe((data) => {
       this.TURNOS_PONTOS = data;
-      console.log(this.TURNOS_PONTOS);
     });
   }
 
@@ -82,18 +81,14 @@ export class PagePartidasComponent implements OnInit {
     partidaId: number,
     duplaId: number
   ): void {
-    console.log('valor - ' + value);
-    console.log('turno - ' + turnoId);
-    console.log('partida - ' + partidaId);
-    console.log('dupla - ' + duplaId);
-
-    this.TURNOS_PONTOS[turnoId].partidas[partidaId].duplas[duplaId].pontos =
-      +value;
+    this.TURNOS_PONTOS.find((x) => x.id == turnoId).partidas[partidaId].duplas[
+      duplaId
+    ].pontos = +value;
 
     this.apiLocal
-      .patchItem('turnos', turnoId, this.TURNOS_PONTOS[turnoId])
+      .patchItem('turnos', turnoId, this.TURNOS_PONTOS.find((x) => x.id == turnoId))
       .subscribe(() => {
-        console.log(this.TURNOS_PONTOS);
+        this.toastr.success('Partidas atualizadas!', 'Feito!!');
       });
   }
 }

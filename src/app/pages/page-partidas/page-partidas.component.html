@@ -9,88 +9,80 @@
   <div *ngIf="TURNOS.length > 0">
     <div *ngFor="let turno of TURNOS; let i = index">
       <h2 id="heading{{ i }}">Turno {{ i + 1 }}</h2>
-      <div>
-        <div class="accordion-body">
-          <div class="card mb-4" *ngFor="let partida of turno.partidas">
-            <div class="card-body partida">
-              <div class="partida-dupla">
-                <div
-                  class="partida-dupla-cor"
-                  [ngClass]="partida.duplas[0].dupla_id.cor"
-                ></div>
-                <div class="partida-dupla-membro">
-                  <img
-                    class="partida-dupla-membro-img"
-                    src="../../../assets/imgs/fotos/{{
-                      partida.duplas[0].dupla_id.participantes[0].nome
-                    }}.jpg"
-                  />
-                  <span class="partida-dupla-membro-nome">{{
-                    partida.duplas[0].dupla_id.participantes[0].nome
-                  }}</span>
-                </div>
-                <div class="partida-dupla-membro">
-                  <img
-                    class="partida-dupla-membro-img"
-                    src="../../../assets/imgs/fotos/{{
-                      partida.duplas[0].dupla_id.participantes[1].nome
-                    }}.jpg"
-                  />
-                  <span class="partida-dupla-membro-nome">{{
-                    partida.duplas[0].dupla_id.participantes[1].nome
-                  }}</span>
-                </div>
-              </div>
-              <div class="partida-pontuacao">
-                <input
-                  type="text"
-                  maxlength="2"
-                  #myInput1
-                  [value]="partida.duplas[0].pontos"
-                  (change)="
-                    alteraPartida(myInput1.value, turno.id, partida.id, 0)
-                  "
-                />
-                <span>x</span>
-                <input
-                  type="text"
-                  maxlength="2"
-                  #myInput2
-                  [value]="partida.duplas[1].pontos"
-                  (change)="
-                    alteraPartida(myInput2.value, turno.id, partida.id, 1)
-                  "
-                />
-              </div>
-              <div class="partida-dupla">
-                <div class="partida-dupla-membro">
-                  <img
-                    class="partida-dupla-membro-img"
-                    src="../../../assets/imgs/fotos/{{
-                      partida.duplas[1].dupla_id.participantes[0].nome
-                    }}.jpg"
-                  />
-                  <span class="partida-dupla-membro-nome">{{
-                    partida.duplas[1].dupla_id.participantes[0].nome
-                  }}</span>
-                </div>
-                <div class="partida-dupla-membro">
-                  <img
-                    class="partida-dupla-membro-img"
-                    src="../../../assets/imgs/fotos/{{
-                      partida.duplas[1].dupla_id.participantes[1].nome
-                    }}.jpg"
-                  />
-                  <span class="partida-dupla-membro-nome">{{
-                    partida.duplas[1].dupla_id.participantes[1].nome
-                  }}</span>
-                </div>
-                <div
-                  class="partida-dupla-cor"
-                  [ngClass]="partida.duplas[1].dupla_id.cor"
-                ></div>
-              </div>
+      <div class="card mb-4" *ngFor="let partida of turno.partidas">
+        <div class="card-body partida">
+          <div class="partida-dupla">
+            <div
+              class="partida-dupla-cor"
+              [ngClass]="partida.duplas[0].dupla_id.cor"
+            ></div>
+            <div class="partida-dupla-membro">
+              <!-- <img
+                class="partida-dupla-membro-img"
+                src="../../../assets/imgs/fotos/{{
+                  partida.duplas[0].dupla_id.participantes[0].nome
+                }}.jpg"
+              /> -->
+              <span class="partida-dupla-membro-nome">{{
+                partida.duplas[0].dupla_id.participantes[0].nome
+              }}</span>
             </div>
+            <div class="partida-dupla-membro">
+              <!-- <img
+                class="partida-dupla-membro-img"
+                src="../../../assets/imgs/fotos/{{
+                  partida.duplas[0].dupla_id.participantes[1].nome
+                }}.jpg"
+              /> -->
+              <span class="partida-dupla-membro-nome">{{
+                partida.duplas[0].dupla_id.participantes[1].nome
+              }}</span>
+            </div>
+          </div>
+          <div class="partida-pontuacao">
+            <input
+              type="text"
+              maxlength="2"
+              #myInput1
+              [value]="partida.duplas[0].pontos"
+              (change)="alteraPartida(myInput1.value, turno.id, partida.id, 0)"
+            />
+            <span>x</span>
+            <input
+              type="text"
+              maxlength="2"
+              #myInput2
+              [value]="partida.duplas[1].pontos"
+              (change)="alteraPartida(myInput2.value, turno.id, partida.id, 1)"
+            />
+          </div>
+          <div class="partida-dupla">
+            <div class="partida-dupla-membro">
+              <!-- <img
+                class="partida-dupla-membro-img"
+                src="../../../assets/imgs/fotos/{{
+                  partida.duplas[1].dupla_id.participantes[0].nome
+                }}.jpg"
+              /> -->
+              <span class="partida-dupla-membro-nome">{{
+                partida.duplas[1].dupla_id.participantes[0].nome
+              }}</span>
+            </div>
+            <div class="partida-dupla-membro">
+              <!-- <img
+                class="partida-dupla-membro-img"
+                src="../../../assets/imgs/fotos/{{
+                  partida.duplas[1].dupla_id.participantes[1].nome
+                }}.jpg"
+              /> -->
+              <span class="partida-dupla-membro-nome">{{
+                partida.duplas[1].dupla_id.participantes[1].nome
+              }}</span>
+            </div>
+            <div
+              class="partida-dupla-cor"
+              [ngClass]="partida.duplas[1].dupla_id.cor"
+            ></div>
           </div>
         </div>
       </div>
