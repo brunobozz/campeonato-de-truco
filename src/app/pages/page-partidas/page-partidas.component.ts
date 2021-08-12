@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { ApiLocalService } from 'src/app/services/api-local/api-local.service';
 
@@ -16,8 +15,7 @@ export class PagePartidasComponent implements OnInit {
 
   constructor(
     private apiLocal: ApiLocalService,
-    private toastr: ToastrService,
-    private router: Router
+    private toastr: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -86,7 +84,11 @@ export class PagePartidasComponent implements OnInit {
     ].pontos = +value;
 
     this.apiLocal
-      .patchItem('turnos', turnoId, this.TURNOS_PONTOS.find((x) => x.id == turnoId))
+      .patchItem(
+        'turnos',
+        turnoId,
+        this.TURNOS_PONTOS.find((x) => x.id == turnoId)
+      )
       .subscribe(() => {
         this.toastr.success('Partidas atualizadas!', 'Feito!!');
       });

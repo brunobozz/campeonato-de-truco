@@ -23,6 +23,7 @@ import { PageDuplaNovaComponent } from './pages/page-dupla-nova/page-dupla-nova.
 import { PagePartidasComponent } from './pages/page-partidas/page-partidas.component';
 import { PageTabelasComponent } from './pages/page-tabelas/page-tabelas.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { ComponentLoadingComponent } from './components/component-loading/component-loading.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { OrderModule } from 'ngx-order-pipe';
     PageDuplaNovaComponent,
     PagePartidasComponent,
     PageTabelasComponent,
+    ComponentLoadingComponent,
   ],
   imports: [
     BrowserModule,

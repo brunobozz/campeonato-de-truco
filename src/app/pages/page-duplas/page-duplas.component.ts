@@ -47,7 +47,6 @@ export class PageDuplasComponent implements OnInit {
   }
 
   deleteDupla(id: number) {
-    console.log(id);
     if (confirm('Tem certeza que deseja apagar essa dupla?')) {
       this.apiLocal.deleteItem(id, 'duplas/').subscribe(() => {
         this.getDuplas();
@@ -85,12 +84,15 @@ export class PageDuplasComponent implements OnInit {
     });
   }
 
-  // public apagarPartidas() {
-  //   this.PARTIDAS.map((data) => {
-  //     this.apiLocal.deleteItem(data.id, 'votacao/').subscribe(() => {
-  //       this.getVotacao();
-  //     });
-  //   });
-  //   this.toastr.error('Votação zerada!');
-  // }
+  public apagarPartidas() {
+    if (confirm('Tem certeza que deseja apagar TODAS as partidas?')) {
+      this.apiLocal.getInfo('turnos').subscribe((data) => {
+        data.map((res: any) => {
+          this.apiLocal.deleteItem(res.id, 'turnos/').subscribe(() => {
+            this.toastr.error('Partidas excluídas!', 'Já era!');
+          });
+        });
+      });
+    }
+  }
 }
