@@ -7,7 +7,7 @@
   </div>
 
   <div *ngIf="TURNOS.length > 0">
-    <div *ngFor="let turno of TURNOS; let i = index">
+    <div *ngFor="let turno of TURNOS; let i = index" class="mt-4 mb-4">
       <h2 id="heading{{ i }}">Turno {{ i + 1 }}</h2>
       <div class="card mb-4" *ngFor="let partida of turno.partidas">
         <div class="card-body partida">

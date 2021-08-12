@@ -1,6 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
-import { LayoutMenuComponent } from '../layout-menu/layout-menu.component';
 
 @Component({
   selector: 'app-layout-header',
@@ -8,13 +6,5 @@ import { LayoutMenuComponent } from '../layout-menu/layout-menu.component';
   styleUrls: ['./layout-header.component.scss'],
 })
 export class LayoutHeaderComponent {
-  @Input()
-  layoutMenu: LayoutMenuComponent = new LayoutMenuComponent();
-
-  constructor( private router: Router) {}
-
-  public toggleMenu() {
-    this.layoutMenu.toggleMenu();
-  }
-
+  constructor() {}
 }

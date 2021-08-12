@@ -85,9 +85,9 @@ export class PageDuplasComponent implements OnInit {
     });
   }
 
-  // public deletarartidas() {
+  // public apagarPartidas() {
   //   this.PARTIDAS.map((data) => {
-  //     this.localApi.deleteItem(data.id, 'votacao/').subscribe(() => {
+  //     this.apiLocal.deleteItem(data.id, 'votacao/').subscribe(() => {
   //       this.getVotacao();
   //     });
   //   });

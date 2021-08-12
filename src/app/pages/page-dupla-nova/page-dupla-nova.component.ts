@@ -35,11 +35,29 @@ export class PageDuplaNovaComponent implements OnInit {
     ) {
       this.loading = true;
       let dupla = {
-        cor:this.duplaForm.value.cor,
+        cor: this.duplaForm.value.cor,
         participantes: [
           this.duplaForm.value.participante1,
           this.duplaForm.value.participante2,
-        ]
+        ],
+        turno: [
+          {
+            id: 1,
+            vitorias: 0,
+            derrotas: 0,
+            tentos_f: 0,
+            tentos_t: 0,
+            saldo: 0,
+          },
+          {
+            id: 2,
+            vitorias: 0,
+            derrotas: 0,
+            tentos_f: 0,
+            tentos_t: 0,
+            saldo: 0,
+          },
+        ],
       };
       this.postDupla(dupla);
     } else {
@@ -48,12 +66,10 @@ export class PageDuplaNovaComponent implements OnInit {
   }
 
   private postDupla(dupla: any) {
-    this.apiLocal
-      .postItem('duplas', dupla)
-      .subscribe(() => {
-        this.toastr.success('Dupla Criada', 'Dalhe!!');
-        this.router.navigate(['/duplas']);
-      });
+    this.apiLocal.postItem('duplas', dupla).subscribe(() => {
+      this.toastr.success('Dupla Criada', 'Dalhe!!');
+      this.router.navigate(['/duplas']);
+    });
   }
 
   public validaCampo(campo: any) {

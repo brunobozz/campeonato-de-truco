@@ -36,6 +36,7 @@ export class PageTabelasComponent implements OnInit {
   getTurnos() {
     this.apiLocal.getInfo('turnos').subscribe((data) => {
       this.TURNOS = data;
+      this.montaTabela();
     });
   }
 
@@ -56,14 +57,17 @@ export class PageTabelasComponent implements OnInit {
 
   sortTabela() {
     this.DUPLAS = this.DUPLAS.sort(
+      (a, b) => b.turno[this.turno].tentos_f - a.turno[this.turno].tentos_f
+    );
+    this.DUPLAS = this.DUPLAS.sort(
       (a, b) => b.turno[this.turno].saldo - a.turno[this.turno].saldo
     );
     this.DUPLAS = this.DUPLAS.sort(
       (a, b) => b.turno[this.turno].vitorias - a.turno[this.turno].vitorias
     );
-    this.DUPLAS = this.DUPLAS.sort(
-      (a, b) => b.turno[this.turno].pontos - a.turno[this.turno].pontos
-    );
+    // this.DUPLAS = this.DUPLAS.sort(
+    //   (a, b) => b.turno[this.turno].pontos - a.turno[this.turno].pontos
+    // );
   }
 
   montaTabela() {

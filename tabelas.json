@@ -1,11 +1,27 @@
 {
   "participantes": [
     {
-      "nome": "Carlinhos",
+      "nome": "Bruno",
+      "id": 1
+    },
+    {
+      "nome": "Ciro",
+      "id": 2
+    },
+    {
+      "nome": "Theo",
       "id": 3
     },
     {
-      "nome": "Chipa",
+      "nome": "Gui",
+      "id": 4
+    },
+    {
+      "nome": "Lico",
+      "id": 5
+    },
+    {
+      "nome": "Márcio",
       "id": 6
     },
     {
@@ -13,82 +29,44 @@
       "id": 7
     },
     {
-      "nome": "Thiago",
+      "nome": "Thales",
       "id": 8
     },
     {
-      "nome": "Thales",
+      "nome": "Thiago",
+      "id": 9
+    },
+    {
+      "nome": "Carlinhos",
       "id": 10
     },
     {
-      "nome": "Guilherme",
+      "nome": "Diego",
       "id": 11
     },
     {
-      "nome": "Lico",
+      "nome": "Vini",
       "id": 12
     },
     {
-      "nome": "Theo",
+      "nome": "Chipa",
       "id": 13
     },
     {
-      "nome": "Bruno",
-      "id": 14
-    },
-    {
-      "nome": "Vinícius",
-      "id": 15
-    },
-    {
       "nome": "Larry",
-      "id": 16
-    },
-    {
-      "nome": "Ciro",
-      "id": 17
-    },
-    {
-      "nome": "Márcio",
-      "id": 18
-    },
-    {
-      "nome": "Diego",
-      "id": 19
+      "id": 14
     }
   ],
   "duplas": [
     {
       "cor": "bg-vermelho",
-      "turno": [
-        {
-          "pontos": 0,
-          "vitorias": 0,
-          "derrotas": 0,
-          "tentos_f": 0,
-          "tentos_t": 0,
-          "saldo": 0
-        },
-        {
-          "pontos": 0,
-          "vitorias": 0,
-          "derrotas": 0,
-          "tentos_f": 0,
-          "tentos_t": 0,
-          "saldo": 0
-        }
-      ],
       "participantes": [
-        "3",
+        "1",
         "6"
       ],
-      "id": 7
-    },
-    {
-      "cor": "bg-azul",
       "turno": [
         {
-          "pontos": 0,
+          "id": 1,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -96,25 +74,25 @@
           "saldo": 0
         },
         {
-          "pontos": 0,
+          "id": 2,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
           "tentos_t": 0,
           "saldo": 0
         }
-      ],
-      "participantes": [
-        "7",
-        "8"
       ],
       "id": 1
     },
     {
-      "cor": "bg-verde",
+      "cor": "bg-azul",
+      "participantes": [
+        "2",
+        "9"
+      ],
       "turno": [
         {
-          "pontos": 0,
+          "id": 1,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -122,25 +100,25 @@
           "saldo": 0
         },
         {
-          "pontos": 0,
+          "id": 2,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
           "tentos_t": 0,
           "saldo": 0
         }
-      ],
-      "participantes": [
-        "12",
-        "13"
       ],
       "id": 2
     },
     {
-      "cor": "bg-roxo",
+      "cor": "bg-laranja",
+      "participantes": [
+        "3",
+        "4"
+      ],
       "turno": [
         {
-          "pontos": 0,
+          "id": 1,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -148,25 +126,25 @@
           "saldo": 0
         },
         {
-          "pontos": 0,
+          "id": 2,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
           "tentos_t": 0,
           "saldo": 0
         }
-      ],
-      "participantes": [
-        "16",
-        "17"
       ],
       "id": 3
     },
     {
-      "cor": "bg-preto",
+      "cor": "bg-verde",
+      "participantes": [
+        "5",
+        "8"
+      ],
       "turno": [
         {
-          "pontos": 0,
+          "id": 1,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -174,25 +152,25 @@
           "saldo": 0
         },
         {
-          "pontos": 0,
+          "id": 2,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
           "tentos_t": 0,
           "saldo": 0
         }
-      ],
-      "participantes": [
-        "18",
-        "19"
       ],
       "id": 4
     },
     {
       "cor": "bg-amarelo",
+      "participantes": [
+        "11",
+        "7"
+      ],
       "turno": [
         {
-          "pontos": 0,
+          "id": 1,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -200,25 +178,25 @@
           "saldo": 0
         },
         {
-          "pontos": 0,
+          "id": 2,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
           "tentos_t": 0,
           "saldo": 0
         }
-      ],
-      "participantes": [
-        "14",
-        "15"
       ],
       "id": 5
     },
     {
-      "cor": "bg-laranja",
+      "cor": "bg-roxo",
+      "participantes": [
+        "12",
+        "10"
+      ],
       "turno": [
         {
-          "pontos": 0,
+          "id": 1,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -226,7 +204,7 @@
           "saldo": 0
         },
         {
-          "pontos": 0,
+          "id": 2,
           "vitorias": 0,
           "derrotas": 0,
           "tentos_f": 0,
@@ -234,11 +212,33 @@
           "saldo": 0
         }
       ],
-      "participantes": [
-        "10",
-        "11"
-      ],
       "id": 6
+    },
+    {
+      "cor": "bg-preto",
+      "participantes": [
+        "13",
+        "14"
+      ],
+      "turno": [
+        {
+          "id": 1,
+          "vitorias": 0,
+          "derrotas": 0,
+          "tentos_f": 0,
+          "tentos_t": 0,
+          "saldo": 0
+        },
+        {
+          "id": 2,
+          "vitorias": 0,
+          "derrotas": 0,
+          "tentos_f": 0,
+          "tentos_t": 0,
+          "saldo": 0
+        }
+      ],
+      "id": 7
     }
   ],
   "turnos": [
@@ -249,11 +249,11 @@
           "duplas": [
             {
               "pontos": 18,
-              "dupla_id": 7
+              "dupla_id": 1
             },
             {
-              "pontos": 12,
-              "dupla_id": 1
+              "pontos": 14,
+              "dupla_id": 2
             }
           ]
         },
@@ -261,12 +261,12 @@
           "id": 1,
           "duplas": [
             {
-              "pontos": 2,
-              "dupla_id": 7
+              "pontos": 18,
+              "dupla_id": 1
             },
             {
-              "pontos": 18,
-              "dupla_id": 2
+              "pontos": 9,
+              "dupla_id": 3
             }
           ]
         },
@@ -275,11 +275,11 @@
           "duplas": [
             {
               "pontos": 14,
-              "dupla_id": 7
+              "dupla_id": 1
             },
             {
               "pontos": 18,
-              "dupla_id": 3
+              "dupla_id": 4
             }
           ]
         },
@@ -287,12 +287,12 @@
           "id": 3,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 7
+              "pontos": 0,
+              "dupla_id": 1
             },
             {
-              "pontos": 8,
-              "dupla_id": 4
+              "pontos": 0,
+              "dupla_id": 5
             }
           ]
         },
@@ -300,12 +300,12 @@
           "id": 4,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 7
+              "pontos": 0,
+              "dupla_id": 1
             },
             {
-              "pontos": 7,
-              "dupla_id": 5
+              "pontos": 0,
+              "dupla_id": 6
             }
           ]
         },
@@ -313,12 +313,12 @@
           "id": 5,
           "duplas": [
             {
-              "pontos": 14,
-              "dupla_id": 7
+              "pontos": 0,
+              "dupla_id": 1
             },
             {
-              "pontos": 18,
-              "dupla_id": 6
+              "pontos": 0,
+              "dupla_id": 7
             }
           ]
         },
@@ -326,12 +326,12 @@
           "id": 6,
           "duplas": [
             {
-              "pontos": 14,
-              "dupla_id": 1
+              "pontos": 0,
+              "dupla_id": 2
             },
             {
-              "pontos": 18,
-              "dupla_id": 2
+              "pontos": 0,
+              "dupla_id": 3
             }
           ]
         },
@@ -339,12 +339,12 @@
           "id": 7,
           "duplas": [
             {
-              "pontos": 2,
-              "dupla_id": 1
+              "pontos": 0,
+              "dupla_id": 2
             },
             {
-              "pontos": 18,
-              "dupla_id": 3
+              "pontos": 0,
+              "dupla_id": 4
             }
           ]
         },
@@ -352,12 +352,12 @@
           "id": 8,
           "duplas": [
             {
-              "pontos": 5,
-              "dupla_id": 1
+              "pontos": 18,
+              "dupla_id": 2
             },
             {
-              "pontos": 18,
-              "dupla_id": 4
+              "pontos": 17,
+              "dupla_id": 5
             }
           ]
         },
@@ -365,12 +365,12 @@
           "id": 9,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 1
+              "pontos": 0,
+              "dupla_id": 2
             },
             {
-              "pontos": 13,
-              "dupla_id": 5
+              "pontos": 0,
+              "dupla_id": 6
             }
           ]
         },
@@ -378,12 +378,12 @@
           "id": 10,
           "duplas": [
             {
-              "pontos": 3,
-              "dupla_id": 1
+              "pontos": 0,
+              "dupla_id": 2
             },
             {
-              "pontos": 18,
-              "dupla_id": 6
+              "pontos": 0,
+              "dupla_id": 7
             }
           ]
         },
@@ -391,12 +391,12 @@
           "id": 11,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 2
+              "pontos": 0,
+              "dupla_id": 3
             },
             {
-              "pontos": 16,
-              "dupla_id": 3
+              "pontos": 0,
+              "dupla_id": 4
             }
           ]
         },
@@ -404,12 +404,12 @@
           "id": 12,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 2
+              "pontos": 0,
+              "dupla_id": 3
             },
             {
-              "pontos": 17,
-              "dupla_id": 4
+              "pontos": 0,
+              "dupla_id": 5
             }
           ]
         },
@@ -417,12 +417,12 @@
           "id": 13,
           "duplas": [
             {
-              "pontos": 15,
-              "dupla_id": 2
+              "pontos": 0,
+              "dupla_id": 3
             },
             {
-              "pontos": 18,
-              "dupla_id": 5
+              "pontos": 0,
+              "dupla_id": 6
             }
           ]
         },
@@ -430,12 +430,12 @@
           "id": 14,
           "duplas": [
             {
-              "pontos": 17,
-              "dupla_id": 2
+              "pontos": 0,
+              "dupla_id": 3
             },
             {
-              "pontos": 18,
-              "dupla_id": 6
+              "pontos": 0,
+              "dupla_id": 7
             }
           ]
         },
@@ -443,12 +443,12 @@
           "id": 15,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 3
+              "pontos": 0,
+              "dupla_id": 4
             },
             {
-              "pontos": 11,
-              "dupla_id": 4
+              "pontos": 0,
+              "dupla_id": 5
             }
           ]
         },
@@ -456,12 +456,12 @@
           "id": 16,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 3
+              "pontos": 0,
+              "dupla_id": 4
             },
             {
-              "pontos": 14,
-              "dupla_id": 5
+              "pontos": 0,
+              "dupla_id": 6
             }
           ]
         },
@@ -469,12 +469,12 @@
           "id": 17,
           "duplas": [
             {
-              "pontos": 11,
-              "dupla_id": 3
+              "pontos": 0,
+              "dupla_id": 4
             },
             {
-              "pontos": 18,
-              "dupla_id": 6
+              "pontos": 0,
+              "dupla_id": 7
             }
           ]
         },
@@ -482,12 +482,12 @@
           "id": 18,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 4
+              "pontos": 0,
+              "dupla_id": 5
             },
             {
-              "pontos": 16,
-              "dupla_id": 5
+              "pontos": 0,
+              "dupla_id": 6
             }
           ]
         },
@@ -495,12 +495,12 @@
           "id": 19,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 4
+              "pontos": 0,
+              "dupla_id": 5
             },
             {
-              "pontos": 15,
-              "dupla_id": 6
+              "pontos": 0,
+              "dupla_id": 7
             }
           ]
         },
@@ -509,11 +509,11 @@
           "duplas": [
             {
               "pontos": 18,
-              "dupla_id": 5
+              "dupla_id": 6
             },
             {
-              "pontos": 17,
-              "dupla_id": 6
+              "pontos": 15,
+              "dupla_id": 7
             }
           ]
         }
@@ -526,12 +526,12 @@
           "id": 0,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 7
+              "pontos": 14,
+              "dupla_id": 1
             },
             {
-              "pontos": 2,
-              "dupla_id": 1
+              "pontos": 18,
+              "dupla_id": 2
             }
           ]
         },
@@ -539,12 +539,12 @@
           "id": 1,
           "duplas": [
             {
-              "pontos": 14,
-              "dupla_id": 7
+              "pontos": 17,
+              "dupla_id": 1
             },
             {
               "pontos": 18,
-              "dupla_id": 2
+              "dupla_id": 3
             }
           ]
         },
@@ -553,11 +553,11 @@
           "duplas": [
             {
               "pontos": 18,
-              "dupla_id": 7
+              "dupla_id": 1
             },
             {
-              "pontos": 17,
-              "dupla_id": 3
+              "pontos": 14,
+              "dupla_id": 4
             }
           ]
         },
@@ -565,12 +565,12 @@
           "id": 3,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 7
+              "pontos": 0,
+              "dupla_id": 1
             },
             {
-              "pontos": 6,
-              "dupla_id": 4
+              "pontos": 0,
+              "dupla_id": 5
             }
           ]
         },
@@ -578,12 +578,12 @@
           "id": 4,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 7
+              "pontos": 0,
+              "dupla_id": 1
             },
             {
-              "pontos": 10,
-              "dupla_id": 5
+              "pontos": 0,
+              "dupla_id": 6
             }
           ]
         },
@@ -591,12 +591,12 @@
           "id": 5,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 7
+              "pontos": 0,
+              "dupla_id": 1
             },
             {
-              "pontos": 15,
-              "dupla_id": 6
+              "pontos": 0,
+              "dupla_id": 7
             }
           ]
         },
@@ -604,12 +604,12 @@
           "id": 6,
           "duplas": [
             {
-              "pontos": 18,
-              "dupla_id": 1
+              "pontos": 0,
+              "dupla_id": 2
             },
             {
-              "pontos": 15,
-              "dupla_id": 2
+              "pontos": 0,
+              "dupla_id": 3
             }
           ]
         },
@@ -617,12 +617,12 @@
           "id": 7,
           "duplas": [
             {
-              "pontos": 15,
-              "dupla_id": 1
+              "pontos": 0,
+              "dupla_id": 2
             },
             {
-              "pontos": 18,
-              "dupla_id": 3
+              "pontos": 0,
+              "dupla_id": 4
             }
           ]
         },
@@ -631,11 +631,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 1
+              "dupla_id": 2
             },
             {
               "pontos": 0,
-              "dupla_id": 4
+              "dupla_id": 5
             }
           ]
         },
@@ -644,11 +644,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 1
+              "dupla_id": 2
             },
             {
               "pontos": 0,
-              "dupla_id": 5
+              "dupla_id": 6
             }
           ]
         },
@@ -657,11 +657,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 1
+              "dupla_id": 2
             },
             {
               "pontos": 0,
-              "dupla_id": 6
+              "dupla_id": 7
             }
           ]
         },
@@ -670,11 +670,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 2
+              "dupla_id": 3
             },
             {
               "pontos": 0,
-              "dupla_id": 3
+              "dupla_id": 4
             }
           ]
         },
@@ -683,11 +683,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 2
+              "dupla_id": 3
             },
             {
               "pontos": 0,
-              "dupla_id": 4
+              "dupla_id": 5
             }
           ]
         },
@@ -696,11 +696,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 2
+              "dupla_id": 3
             },
             {
               "pontos": 0,
-              "dupla_id": 5
+              "dupla_id": 6
             }
           ]
         },
@@ -709,11 +709,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 2
+              "dupla_id": 3
             },
             {
               "pontos": 0,
-              "dupla_id": 6
+              "dupla_id": 7
             }
           ]
         },
@@ -722,11 +722,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 3
+              "dupla_id": 4
             },
             {
               "pontos": 0,
-              "dupla_id": 4
+              "dupla_id": 5
             }
           ]
         },
@@ -735,11 +735,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 3
+              "dupla_id": 4
             },
             {
               "pontos": 0,
-              "dupla_id": 5
+              "dupla_id": 6
             }
           ]
         },
@@ -748,11 +748,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 3
+              "dupla_id": 4
             },
             {
               "pontos": 0,
-              "dupla_id": 6
+              "dupla_id": 7
             }
           ]
         },
@@ -761,11 +761,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 4
+              "dupla_id": 5
             },
             {
               "pontos": 0,
-              "dupla_id": 5
+              "dupla_id": 6
             }
           ]
         },
@@ -774,11 +774,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 4
+              "dupla_id": 5
             },
             {
               "pontos": 0,
-              "dupla_id": 6
+              "dupla_id": 7
             }
           ]
         },
@@ -787,11 +787,11 @@
           "duplas": [
             {
               "pontos": 0,
-              "dupla_id": 5
+              "dupla_id": 6
             },
             {
               "pontos": 0,
-              "dupla_id": 6
+              "dupla_id": 7
             }
           ]
         }

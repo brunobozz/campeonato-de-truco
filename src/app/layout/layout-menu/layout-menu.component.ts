@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-layout-menu',
@@ -9,16 +11,13 @@ export class LayoutMenuComponent {
   isOpen: boolean = false;
   public menuSelecionado: string = '/participantes';
 
-  constructor() {}
-
-  public toggleMenu() {
-    this.isOpen = !this.isOpen;
-  }
-
-  clickMenu(menu: string) {
-    if (this.isOpen) {
-      this.isOpen = !this.isOpen;
-    }
-    this.menuSelecionado = menu;
+  constructor(private location: Location, private router: Router) {
+    this.router.events.subscribe(() => {
+      if (this.location.path() !== '') {
+        this.menuSelecionado = '/' + location.path().substring(1);
+      } else {
+        this.menuSelecionado = '/participantes';
+      }
+    });
   }
 }

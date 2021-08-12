@@ -4,9 +4,6 @@
       <i class="fa fa-trophy"></i>
       <span> Tabelas</span>
     </h2>
-    <button class="btn btn-primary btn-sm" (click)="montaTabela()">
-      Somar
-    </button>
   </div>
   <ul class="nav nav-pills nav-justified mt-4">
     <li class="nav-item">
@@ -35,11 +32,11 @@
           <th scope="col">P</th>
           <th scope="col">Dupla</th>
           <th scope="col" class="text-center">Vít.</th>
-          <th scope="col" class="text-center">Derr.</th>
+          <!-- <th scope="col" class="text-center">Derr.</th> -->
           <th scope="col" class="text-center">T/F</th>
           <th scope="col" class="text-center">T/T</th>
           <th scope="col" class="text-center">Saldo</th>
-          <th scope="col" class="text-center">Pontos</th>
+          <!-- <th scope="col" class="text-center">Pontos</th> -->
         </tr>
       </thead>
       <tbody>
@@ -54,13 +51,13 @@
             </div>
           </td>
           <td class="text-center">{{ dupla.turno[0].vitorias }}</td>
-          <td class="text-center">{{ dupla.turno[0].derrotas }}</td>
+          <!-- <td class="text-center">{{ dupla.turno[0].derrotas }}</td> -->
           <td class="text-center">{{ dupla.turno[0].tentos_f }}</td>
           <td class="text-center">{{ dupla.turno[0].tentos_t }}</td>
           <td class="text-center">{{ dupla.turno[0].saldo }}</td>
-          <td class="text-center fw-bold">
+          <!-- <td class="text-center fw-bold">
             {{ dupla.turno[0].pontos }}
-          </td>
+          </td> -->
         </tr>
       </tbody>
     </table>
@@ -72,11 +69,11 @@
           <th scope="col">P</th>
           <th scope="col">Dupla</th>
           <th scope="col" class="text-center">Vít.</th>
-          <th scope="col" class="text-center">Derr.</th>
+          <!-- <th scope="col" class="text-center">Derr.</th> -->
           <th scope="col" class="text-center">T/F</th>
           <th scope="col" class="text-center">T/T</th>
           <th scope="col" class="text-center">Saldo</th>
-          <th scope="col" class="text-center">Pontos</th>
+          <!-- <th scope="col" class="text-center">Pontos</th> -->
         </tr>
       </thead>
       <tbody>
@@ -91,13 +88,13 @@
             </div>
           </td>
           <td class="text-center">{{ dupla.turno[1].vitorias }}</td>
-          <td class="text-center">{{ dupla.turno[1].derrotas }}</td>
+          <!-- <td class="text-center">{{ dupla.turno[1].derrotas }}</td> -->
           <td class="text-center">{{ dupla.turno[1].tentos_f }}</td>
           <td class="text-center">{{ dupla.turno[1].tentos_t }}</td>
           <td class="text-center">{{ dupla.turno[1].saldo }}</td>
-          <td class="text-center fw-bold">
+          <!-- <td class="text-center fw-bold">
             {{ dupla.turno[1].pontos }}
-          </td>
+          </td> -->
         </tr>
       </tbody>
     </table>
