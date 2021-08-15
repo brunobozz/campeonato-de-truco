@@ -18,7 +18,7 @@ export class PagePartidasComponent implements OnInit {
     private toastr: ToastrService
   ) {}
 
-  ngOnInit(): void {
+  async ngOnInit() {
     this.getTurnosPontos();
     this.getParticipantes();
     this.getDuplas();

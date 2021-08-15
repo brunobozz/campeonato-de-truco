@@ -49,12 +49,7 @@ const routes: Routes = [
   },
   {
     path: 'tabelas',
-    children: [
-      {
-        path: '',
-        component: PageTabelasComponent,
-      },
-    ],
+    component: PageTabelasComponent,
   },
 ];
 
